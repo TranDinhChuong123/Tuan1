@@ -2,12 +2,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+<%--    <title>JSP - Hello World</title>--%>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+    <form action="ControllerServlet" method="post">
+
+        UserName  <input type="text" name="user"  >  <br>
+        Password   <input type="password"  name="pass" > <br>
+
+        <input type="submit" name="action" value="Login"></input>
+
+
+        <input type="hidden" name="action" value="displayList">
+    </form>
+
+
+
+<%--<a href="hello-servlet">Hello Servlet</a>--%>
 </body>
 </html>
